@@ -1,0 +1,335 @@
+
+
+
+
+/* Home.css */
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .aboutus{
+    padding-top:100px;
+    background-color:#fff7f0;
+    
+  }
+  .statisticsBGColor{
+    margin-top: 140px;
+    padding-bottom: 20px;
+    /* background-color: #ffe0ce74; */
+    background-color:#fff7f0;
+  }
+
+  .bg-custom-nav-button{
+    background-color: rgba(255, 224, 206, 0.796);
+    /* text-white sm:text-white sm:bg-black */
+    color :white;
+  }
+  .bg-custom-nav-button:hover  {
+    background-color: rgb(255, 224, 206);
+  }
+   
+
+  .statisticCard{
+    width: 278px;
+    height: 150px;
+    margin-top: 30px;
+ 
+
+  }
+  .statisticHeader{
+    font-weight: bolder;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .homePageCardsSection{
+
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  
+.icon{
+  background-color: white;
+  border: solid 1px white; 
+  width:fit-content;
+  border-radius: 50px;
+  padding: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+/* src/RealEstateCard.css *//* src/RealEstateCard.css */
+
+/* src/RealEstateCard.css */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImg {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+  background-color: #fff9f6;
+}
+
+.card-address {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.card-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.card-detail {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.card-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #01010172;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.FeaturedTitle{
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 40px;
+justify-content: space-around;
+
+}
+
+.exploreLink{
+  font-size: xx-large;
+  text-decoration: none;
+  color: #fd650b; 
+  font-weight: 300;
+
+}
+
+.exploreLink:hover{
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+.rentSaleNav{
+  display: flex;
+  justify-content: center;
+}
+.rentSaleNav a {
+  margin-left: 50px;
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: pointer;
+color:#fd650b;
+  text-decoration: none;
+
+}
+.customMargin{
+  margin-top: 10em;
+}
+
+
+@media (max-width: 639px) {
+  .customMargin {
+    margin-top: 11em; /* 4 This is the same as Tailwind's m-10 */
+  }
+  .pageDetailsCustumMargin{
+    margin-top: 6em;
+  }
+}
+.pageDetailsCustumMargin {
+  margin-top: 4em;
+}
+
+/* rentDescriptionPage */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+/* variables */
+
+:root {
+  --tab-color: #000000; 
+  --tab-active-color: #1097eb; 
+  --tab-hover-color: #95989c; 
+}
+
+.custom-tabs .nav-link {
+  color: var(--tab-color) !important; /* Use !important to ensure it overrides */
+}
+
+.custom-tabs .nav-link.active {
+  color: var(--tab-active-color) !important; /* Use !important to ensure it overrides */
+}
+
+.ant-upload-select{
+  width: 40em !important;
+  /* height: 100% !important; */
+  margin-bottom: 2em;
+}
+
+.contactUs{
+  margin-top:3em;
+  width:80% !important;
+  border-radius: 50px;
+  background-color: #fff7f0;
+}
+.footer{
+  margin-top: 5em;
+  background-color:rgba(255, 224, 206, 0.558)
+}
+
+/* rent modal  */
+
+/* In your CSS file */
+.modal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.confirm-button, .cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cardImg{
+  height: 18.5em;
+  object-fit: cover !important;
+}
+.react-datepicker__day--disabled {
+  color: red; /* Red color for disabled dates */
+  background-color: #f8d7da;
+}
+
+/* nav bar media query  */
+@media (max-width: 600px) {
+  
+  .bg-custom-nav-button{
+    /* md:text-white sm:bg-black */
+    background-color: black !important;
+  }
+
+}
+
+
+
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
